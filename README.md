@@ -1,4 +1,7 @@
-# countries
+# countries | phone validator
+
+### Requirements
+Vue 3
 
 ## Project setup
 ```
