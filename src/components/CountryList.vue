@@ -125,9 +125,9 @@ export default {
 
     searchCountry(searchValue) {
       searchValue = searchValue.trim().toLowerCase();
-      const foundCountries = this.countries.filter((country) =>
-        country.name.includes(searchValue)
-      );
+      const foundCountries = this.countries.filter((country) => {
+        return country.name.toLowerCase().includes(searchValue);
+      });
       this.filteredCountries = foundCountries;
     },
 
